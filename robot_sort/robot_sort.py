@@ -97,11 +97,18 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
+        #Move from the left to the right
         while self.can_move_right():
             self.swap_item()
             self.move_right()
             #If the held item's value is greater
-            if self.compare_item() == 1
+            if self.compare_item() == 1:
+                # swap item
+                self.swap_item()
+            self.move_left()
+            self.swap_item()
+            self.can_move_right()
+
 
 
 
