@@ -10,7 +10,10 @@ def count_th(word):
     #         count += 1    
     
     # return count
-    if len(word) < 2:
-        return 0
-    elif word[i] and word[i+1] == "th":
-        return count
+    for i in range(0, len(word)-1):
+        if len(word) < 2:
+            return 0        
+        elif word[i] == "t" and word[i+1] == "h":
+            return 1 + count_th(word[1:])
+        else:
+            return count_th(word[1:])
