@@ -5,7 +5,7 @@
 a) O(n): Amount of time while loop will run is proportional to the size of n.
 
 
-b) O(n^3): has to loop 2 times , plus find if j is even
+b) O(n^3): has to loop 2 times , plus find  j * 2
 
 
 c) O(n): runs on time per each bunny
